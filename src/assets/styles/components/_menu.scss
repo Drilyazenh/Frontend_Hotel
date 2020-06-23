@@ -1,0 +1,44 @@
+.menu{
+    height:70px;
+    @include isFlex($justify: space-between, $wrap:no-wrap,$align:center);
+    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+    &__list {
+        width:100%;
+        @include isFlex($justify: flex-end, $wrap:no-wrap);
+        &_right,
+        &_left,
+        &_mid {
+            width: 100%;
+        }
+        &_left{
+            max-width: 106px;
+        }
+        &_mid{
+            max-width: 691px;
+        }
+        &_right{
+            max-width: 323px;
+        }
+        
+        
+    }
+    &__link{
+            color: $dark50;
+        }
+    &__item{
+        margin-left: 20px;
+        font-size: 14px;
+        font-family: $montserrat;
+        transition: 0.2s;
+
+        :hover{
+            color:rgba(31, 32, 65, 0.75);
+        }
+    
+    }
+    &__btn{
+        height: auto;
+    }
+   
+    }
+
