@@ -1,4 +1,11 @@
 header{
     height: 70px;
     align-items: center;
+    &__logo{
+        height: 40px;
+        width: 106px;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
 }

@@ -24,21 +24,38 @@
     }
     &__link{
             color: $dark50;
+            
         }
     &__item{
         margin-left: 20px;
         font-size: 14px;
         font-family: $montserrat;
         transition: 0.2s;
-
+        &_mid{
         :hover{
             color:rgba(31, 32, 65, 0.75);
         }
+        }
+    }
     
-    }
-    &__btn{
-        height: auto;
-    }
+    &__btn{       
+        &_in{
+            color: #BC9CFF;
+            border: 2px solid;
+            border-radius: 22px;
+            padding:10px 20px;
+           
+        }
+        &_reg{
+        color: white;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        border-radius: 22px;
+        padding:10px 20px;
    
+        }
+        &:hover{
+            opacity: 0.5;
+        }
     }
+}
 

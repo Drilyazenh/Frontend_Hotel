@@ -50,5 +50,13 @@
     "normalize.css": "^8.0.0",
     "scrollmagic": "^2.0.5"
   },
-  "author": "ilya"
+  "author": "ilya",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drilyazenh/Frontend_Hotel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Drilyazenh/Frontend_Hotel/issues"
+  },
+  "homepage": "https://github.com/Drilyazenh/Frontend_Hotel#readme"
 }
