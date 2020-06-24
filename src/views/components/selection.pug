@@ -1,0 +1,18 @@
+section.selection
+  .selection__container
+    h1.selection__title Найдём номера под ваши пожелания
+    ul.selection__datelist
+        li.selection__item
+            label(for="selection__date_in") ПРИБЫТИЕ
+            input(type="date" id="selection__date_in" name="date_in")
+        li.selection__item
+            label(for="selection__date_out") ВЫЕЗД
+            input(type="date" id="selection__date_out" name="date_out")
+    .guests__container
+        select(name="").guests__select
+          option(value="1" disabled selected) Сколько гостей
+          option(value="2") Взрослые
+          option(value="3") Дети
+          option(value="4") Младенцы
+    .selection__button
+        a.selection__link(href="") ПОДОБРАТЬ НОМЕР 
