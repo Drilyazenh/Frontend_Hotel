@@ -8,11 +8,18 @@ section.selection
         li.selection__item
             label(for="selection__date_out") ВЫЕЗД
             input(type="date" id="selection__date_out" name="date_out")
-    .guests__container
-        select(name="").guests__select
-          option(value="1" disabled selected) Сколько гостей
-          option(value="2") Взрослые
-          option(value="3") Дети
-          option(value="4") Младенцы
+    .guests
+     .guests__container
+            .guests__header ГОСТИ
+            ul.selection__guests
+                li.guests__item
+                    .guests__item-container.guests__item_default Сколько гостей
+                     img(src="../assets/images/icon/expand_more.svg", alt="").guests__link_expand 
+                li.guests__item.guests__item_hidden
+                   .guests__item-container Взрослые
+                li.guests__item.guests__item_hidden
+                   .guests__item-container Дети 
+                li.guests__item.guests__item_hidden
+                   .guests__item-container Младенцы 
     .selection__button
         a.selection__link(href="") ПОДОБРАТЬ НОМЕР 

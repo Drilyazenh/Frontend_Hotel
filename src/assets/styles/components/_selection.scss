@@ -27,5 +27,70 @@
     &__datelist{
         @include isFlex($justify: space-between,$direction:row,$wrap:nowrap);
     }
+    label{
+        color:black;
+        
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        
+    }
+    .guests{
+        width: 100%;
+        &__header{
+            
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        &__item_hidden{
+            display: none;
+        }
+        &__item{
+           
+            width: 100%;
+            height: 44px;
+            max-width: 320px;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            box-sizing: border-box;
+            border-radius: 4px;
+            align-items: center;
+            :hover{
+                display: block;
+            }
+        }
+        &__item-container{
+           
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            padding-left: 15px;
+            padding-top: 13px;
+        }
+        &__item_hidden{
+            
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            border-radius: 0px;
+            
+        }
+        
+        &__link_expand{
+            display: inline-block;
+            padding-right: 15px;
+        }
+        &__item_default{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            @include isFlex($justify: space-between,$direction:row,$wrap:no-wrap);
+        }
+         
+        
+    }
 
-}
+    }
+
+
