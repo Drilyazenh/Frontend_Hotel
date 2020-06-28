@@ -43,19 +43,22 @@
         }
     }
     
-    &__btn{       
+    &__btn{ 
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;      
+        text-transform: uppercase;
         &_in{
             color: #BC9CFF;
             border: 2px solid;
             border-radius: 22px;
-            padding:10px 20px;
+            padding:10px 10px;
            
         }
         &_reg{
         color: white;
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
         border-radius: 22px;
-        padding:10px 20px;
+        padding:10px 10px;
    
         }
         &:hover{

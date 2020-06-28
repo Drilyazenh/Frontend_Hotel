@@ -1,5 +1,7 @@
 
 .selection{
+    position: absolute;
+    top:140px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
@@ -9,6 +11,7 @@
     height: 374px;
     max-width: 380px;
     &__container{
+        
         margin:30px;
         margin-top: 40px;
         width: 100%;
@@ -29,68 +32,98 @@
     }
     label{
         color:black;
-        
+        font-family: Quicksand;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
         
+        
     }
-    .guests{
-        width: 100%;
+    &__item input{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        text-transform: uppercase;
+        width: 150px;
+        height: 44px;
+        background:no-repeat url(/assets/images/icon/expand_more.svg);
+        background-position: bottom 50% right 10px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        padding-left:10px;
+        margin-bottom: 0px;
+        &:focus{
+            background: none;
+        }
+        
+
+    }
+    &__link{
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        border-radius: 22px;
+        font-family: Quicksand;
+        font-weight: bold;
+        font-size: 12px;
+        color: #FFFFFF;
+        width: 320px;
+        height: 44px;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 15px;
+        &:hover{
+            opacity: 0.5;
+        }
+
+    }
+    .dropdown{
+        margin-top: -20px;
         &__header{
-            
+            font-family: Quicksand;
             font-style: normal;
             font-weight: bold;
             font-size: 12px;
         }
-        &__item_hidden{
-            display: none;
-        }
-        &__item{
-           
-            width: 100%;
+        &__toggle{
+            
+            width: 320px;
             height: 44px;
-            max-width: 320px;
+            background: #FFFFFF;
             border: 1px solid rgba(31, 32, 65, 0.25);
             box-sizing: border-box;
             border-radius: 4px;
-            align-items: center;
-            :hover{
-                display: block;
-            }
-        }
-        &__item-container{
-           
-            font-style: normal;
-            font-weight: bold;
-            font-size: 12px;
-            padding-left: 15px;
-            padding-top: 13px;
-        }
-        &__item_hidden{
-            
-            font-style: normal;
-            font-weight: bold;
-            font-size: 12px;
-            border-radius: 0px;
-            
-        }
-        
-        &__link_expand{
-            display: inline-block;
-            padding-right: 15px;
-        }
-        &__item_default{
+            padding-right: 260px;
+            padding-left: 10px;
             font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
-            @include isFlex($justify: space-between,$direction:row,$wrap:no-wrap);
+            text-transform: uppercase;
+            background:no-repeat url(/assets/images/icon/expand_more.svg);
+            background-position: bottom 50% right 10px;
         }
+        &__menu{
+            border: 1px solid rgba(31, 32, 65, 0.5);
+            box-sizing: border-box;
+            border-radius: 2px;
+        }
+        &__input{
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            text-transform: uppercase;
+            width: 320px;
+            height: 44px;
+            display: none;
+
+
+        }
+    }
          
         
     }
 
-    }
+    
 
 

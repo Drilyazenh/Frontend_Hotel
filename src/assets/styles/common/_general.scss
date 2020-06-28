@@ -9,7 +9,7 @@ body {
   height: 100%;
 }
 body {
-  @include container(1440);
+  @include container(1940);
   font-family: $quicksand;
   // background: $darkslategray;
 }
