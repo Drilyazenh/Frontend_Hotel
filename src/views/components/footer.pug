@@ -1,4 +1,48 @@
 //- src/views/components/footer.pug
 
 footer.footer
-  p Footer #[a(href='') Mario Dev]
+  .container
+    ul.footer__list
+      li.footer__item.footer__item_logo
+        a.footer__link.footer__link_logo(href="") 
+          img(src="../assets/images/icon/Logo.svg", alt="").footer__logo
+        p.footer__item_text.footer__link_text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+      li.footer__item.footer__item_information
+        ul.information__list.information__list_nav
+          li.information__item.information__item_header 
+            a.information__link(href="") Навигация
+          li.information__item    
+            a.information__link(href="") О нас
+          li.information__item    
+            a.information__link(href="") Новости
+          li.information__item    
+            a.information__link(href="") Служба поддержки
+          li.information__item    
+            a.information__link(href="") Услуги
+        ul.information__list.information__list_about
+          li.information__item.information__item_header 
+            a.information__link(href="") О нас
+          li.information__item    
+            a.information__link(href="") О сервисе
+          li.information__item    
+            a.information__link(href="") Наша команда
+          li.information__item    
+            a.information__link(href="") Вакансии
+          li.information__item    
+            a.information__link(href="") Инвесторы
+        ul.information__list.information__list_about
+          li.information__item.information__item_header 
+            a.information__link(href="") СЛУЖБА поддержки
+          li.information__item    
+            a.information__link(href="") Соглашения
+          li.information__item    
+            a.information__link(href="") Сообщества
+          li.information__item    
+            a.information__link(href="") Связь с нами
+          li.information__item    
+            a.information__link(href="") Инвесторы
+      li.footer__item.footer__item_sub
+        h2.information__item_header  ПОДПИСКА
+        p.footer__item_text.footer__sub_text Получайте специальные предложения и новости сервиса
+        label(for="email") 
+        input(type="email" placeholder="Email").footer__input      
