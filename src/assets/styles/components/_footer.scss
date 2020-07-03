@@ -62,9 +62,38 @@
             font-weight: normal;
             font-size: 14px;
             color: rgba(31, 32, 65, 0.5);
+            
         }
         &__item{
             padding-top: 20px;
+            :hover{
+                color:rgba(31, 32, 65, 0.75);
+            }
+        }
+    }
+    &-under__container{
+        height: 70px;
+        @include isFlex($justify: space-between, $wrap:no-wrap,$align:center); 
+        box-shadow: 0px 0px 1px 1px rgba(31, 32, 65, 0.1);
+    }
+    &-under{
+        @include isFlex($justify: space-between, $wrap:no-wrap,$align:center); 
+        &__text{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            color: rgba(31, 32, 65, 0.75);
+        }
+        &__soccial-list{
+            width: 112px;
+            @include isFlex($justify: space-between, $wrap:no-wrap,$align:center);
+            
+        }
+        &__item{
+            &:hover{
+                opacity: 0.5;
+            }
         }
     }
 
