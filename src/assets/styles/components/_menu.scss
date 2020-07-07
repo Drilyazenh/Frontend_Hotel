@@ -41,6 +41,12 @@
             color:rgba(31, 32, 65, 0.75);
         }
         }
+        &_dropdown{
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            padding-top: 5px;
+        }
     }
     
     &__btn{ 
@@ -65,5 +71,28 @@
             opacity: 0.5;
         }
     }
+    &__dropdown{
+        
+        @include isFlex($justify: space-between,$direction:column, $wrap:no-wrap,$align:baseline);
+        position: absolute;
+        background-color: white;
+        max-width: 107px;
+        &-mid{
+            max-width: 67px;
+        }
+        
+        }
+        
 }
+.dropdown_menu{
+    ul{
+        display: none;
+    }
+    &:hover{
+        ul{
+            @include isFlex($justify: space-between,$direction:column, $wrap:no-wrap,$align:baseline);
+        }
+    }
+}
+
 
