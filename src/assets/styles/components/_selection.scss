@@ -47,14 +47,15 @@
         text-transform: uppercase;
         width: 150px;
         height: 44px;
-        background:no-repeat url(/assets/images/icon/expand_more.svg);
-        background-position: bottom 50% right 10px;
+        /*background:no-repeat url(/assets/images/icon/expand_more.svg);
+        background-position: bottom 50% right 10px;*/ 
         border: 1px solid rgba(31, 32, 65, 0.25);
         border-radius: 4px;
         padding-left:10px;
         margin-bottom: 0px;
-        &:focus{
-            background: none;
+        &:hover{
+            background:no-repeat url(/assets/images/icon/expand_more.svg);
+            background-position: bottom 50% right 10px;
         }
         
 

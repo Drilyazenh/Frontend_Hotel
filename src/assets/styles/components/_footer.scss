@@ -4,7 +4,7 @@
     height: 372px;
     &__input{
         width: 100%;
-        margin-top: 20px;
+        
     }
     &__list{
         
@@ -24,12 +24,13 @@
         color: rgba(31, 32, 65, 0.75);
         &_text{
             line-height: 24px;
-            padding-top: 43px;
+            
         }
         &_information{
             width: 100%;
+            padding-top: 100px;
             
-        @include isFlex($justify: space-between, $wrap:no-wrap,$align:center);  
+        @include isFlex($justify: space-between, $wrap:no-wrap,$align:baseline);  
         }   
         &_header{
             font-family: 'Times New Roman', Times, serif;
@@ -37,6 +38,7 @@
             color: #1F2041;
             text-transform: uppercase;
             font-weight: bold;
+            
         }
         
         &_logo{
@@ -51,7 +53,7 @@
     }
     .information{
         &__list{
-            padding-top: 100px;
+            
             &_sub{
                 width: 260px;
             }
